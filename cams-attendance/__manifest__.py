@@ -1,16 +1,27 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "CAMS Realtime Biometric Attendance",
+    'name': "Zkteco, eSSL, Cams Biometrics Attendance Integration Module",
 
     'summary': """
-        Receives the realtime biometric attendance through CAMS API and updates in hr.attendance module.
+        Receives the attendanc/punches from the biometric devices and updates in hr.attendance module of odoo server.
         """,
 
     'description': """
-        The module is developed based on the CAMS API as documented at http://camsunit.com/application/biometric-web-api.html. It receives the biometric attendance on realtime and integrates with hr.attendance module
+        The module is developed based on the Cams biometric web api as documented at http://camsunit.com/application/biometric-web-api.html. It receives the biometric attendance on realtime and integrates with hr.attendance module. 
+        
+	It supports all the cams biometrics machines listed at https://camsunit.com/product/home.html
+        It alos supports 
+        	ZKTeco, 
+        	eSSL, 
+        	Identix, 
+        	BioMax 
+        	and more biometric machines provided they are verified at https://developer.camsunit.com/
+        
+        Module requires valid API license as listed at https://camsunit.com/application/biometric-web-api.html#api_cost
+        
     """,
 
-    'author': "Dheeram Innovations",
+    'author': "Cams Biometrics",
     'category': 'Uncategorized',
     'version': '0.1',
     'depends': ['hr','hr_attendance'],
