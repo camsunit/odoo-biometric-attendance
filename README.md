@@ -7,4 +7,4 @@ If you have cams biometric machines listed at https://camsunit.com/product/home.
 
 If you are using machines from ZKTeco, ESSL, BioMax, Identix and more, then you have to verify at https://developer.camsunit.com/ and protocol update (https://camsunit.com/product/cams-protocol-update-for-enabling-api-to-biometric-attendance-system.html) has to be purchased along with the cams API license
 
-If you need any support for integration, you can reach us in WhatsApp wa.me/919840981006 or sales@camsunit.com
+If you need any support for integration, you can reach us in WhatsApp https://wa.me/919840981006 or sales@camsunit.com
