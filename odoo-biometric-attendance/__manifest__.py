@@ -6,7 +6,7 @@
         The module is developed based on the Cams biometric web api as documented at http://camsunit.com/application/biometric-web-api.html. It receives the biometric attendance on realtime and integrates with hr.attendance module. 
         
 	It supports all the cams biometrics machines listed at https://camsunit.com/product/home.html
-        It alos supports 
+        It also supports 
         	ZKTeco, 
         	eSSL, 
         	Identix, 
@@ -25,6 +25,9 @@
     'website': "https://www.camsunit.com",
     'depends': ['hr','hr_attendance'],
     'installable': True,
+    'images':[
+        'static/description/banner.png',
+        ],
     'data': [
         'security/ir.model.access.csv',
         'views/views.xml',
