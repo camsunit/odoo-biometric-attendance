@@ -25,6 +25,9 @@
     'website': "https://www.camsunit.com",
     'depends': ['hr','hr_attendance'],
     'installable': True,
+    'images':[
+        'static/description/banner.png',
+        ],
     'data': [
         'security/ir.model.access.csv',
         'views/views.xml',
