@@ -3,10 +3,10 @@
     'name': "Zkteco, eSSL, Cams Biometrics Integration Module with HR Attendance",
     'summary': """Receives the attendance/punches from the biometric devices and updates in hr.attendance module of odoo server.""",
     'description': """
-        The module is developed based on the Cams biometric web api as documented at http://camsunit.com/application/biometric-web-api.html. It receives the biometric attendance on realtime and integrates with hr.attendance module. 
+        The module is developed based on the Cams biometric web api as documented at https://camsunit.com/application/biometric-web-api.html. It receives the biometric attendance on realtime and integrates with hr.attendance module. 
         
 	It supports all the cams biometrics machines listed at https://camsunit.com/product/home.html
-        It also supports 
+        It alos supports 
         	ZKTeco, 
         	eSSL, 
         	Identix, 
