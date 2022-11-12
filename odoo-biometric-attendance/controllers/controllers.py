@@ -7,12 +7,13 @@ import json
 
 
 class CamsAttendance(http.Controller):
-    @http.route('/cams/biometric-api3.0/', method=["POST"], csrf=False, auth='public', type="http")
+    @http.route('/cams/biometric-api3.0/', method=["POST"], csrf=False, auth='public', type='http')
     def generate_attendance(self, **params):
 
         machine_id = params.get('stgid')
         param_direction = params.get('direction')
         db_name = params.get('db')
+		
 
         if db_name is not None:
             if not is_db_exist(db_name):
@@ -26,15 +27,14 @@ class CamsAttendance(http.Controller):
             return Response('{"status":"error","message":"stgid is empty"}', status=400)
 
         if param_direction is not None:
+            if int(param_direction) > 3 or int(param_direction) < 1:
+                return Response('{"status":"error","message": "Given direction is invalid"  }', status=400)
             direction = param_direction
         else:
             params = request.env['ir.config_parameter'].sudo()
-            direction = params.get_param('cams-attendance.direction') or '2'
+            direction = params.get_param('cams-attendance.entry_strategy') or '2'
         if not direction:
             direction = '2'
-
-        if 1 >= int(param_direction) >= 3:
-            return Response('{"status":"error","message": "Given direction is invalid"  }', status=400)
 
         try:
             data = json.loads(request.httprequest.data)
@@ -226,3 +226,4 @@ def start_day_gmt(att_time_obj, attendance_time):
 def end_day_gmt(att_time_obj, attendance_time):
     end_day = datetime.strptime(str(att_time_obj.date()) + " 23:59:59", '%Y-%m-%d %H:%M:%S')
     return end_day + get_gmt_delta(attendance_time)
+
