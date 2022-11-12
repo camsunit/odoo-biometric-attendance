@@ -6,7 +6,7 @@ from odoo import api, fields, models
 class CustomBaseConfigSettings(models.TransientModel):
     _inherit = 'res.config.settings'
 
-    direction = fields.Selection([
+    entry_strategy = fields.Selection([
         ('1', 'First Entry as Check In and last entry as Check Out'),
         ('2', 'Actual In/Out time as per the input from device'),
         ('3', 'Consider first entry as check-in, next entry as check-out, and next entry as check-in ..'),
@@ -36,12 +36,12 @@ class CustomBaseConfigSettings(models.TransientModel):
         res = super(CustomBaseConfigSettings, self).get_values()
         params = self.env['ir.config_parameter'].sudo()
         res.update(
-            direction=params.get_param('cams-attendance.direction', default='2'),
+            entry_strategy=params.get_param('cams-attendance.entry_strategy', default='2'),
             update_device=params.get_param('cams-attendance.update_device'),
         )
         return res
 
     def set_values(self):
         super(CustomBaseConfigSettings, self).set_values()
-        self.env['ir.config_parameter'].sudo().set_param("cams-attendance.direction", self.direction)
+        self.env['ir.config_parameter'].sudo().set_param("cams-attendance.entry_strategy", self.entry_strategy)
         self.env['ir.config_parameter'].sudo().set_param("cams-attendance.update_device", self.update_device)
