@@ -12,7 +12,7 @@
                         <div class="row mt16 o_settings_container">
                             <div class="col-12 col-lg-6 o_setting_box">
                                 <div>
-                                    <field name="direction" widget="radio"/>
+                                    <field name="entry_strategy" widget="radio"/>
                                 </div>
                             </div>
                         </div>
