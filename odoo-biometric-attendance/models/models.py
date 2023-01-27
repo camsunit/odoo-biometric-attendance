@@ -75,7 +75,7 @@ class HrEmployee(models.Model):
     _inherit = 'hr.employee'
 
     service_tag_ids = fields.Many2many('device.service.tag')    
-    employee_ref = fields.Char('Biometric User ID', required=True)
+    employee_ref = fields.Char('Biometric User ID', required=False)
 
 
     def check_device_config(self):
