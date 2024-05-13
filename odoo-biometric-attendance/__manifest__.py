@@ -32,23 +32,22 @@ at https://developer.camsunit.com/.
 This module requires a valid API license as listed in
 https://camsunit.com/application/biometric-web-api.html#api_cost.
     """,
-    
-
-    'author': "Cams Biometrics",
-    'category': 'Generic Modules/Human Resources',
-    'version': '1.0',
-    'license': 'AGPL-3',
-    'company': 'Cams Biometrics',
-    'website': "https://www.camsunit.com",
-    'depends': ['hr','hr_attendance'],
-    'installable': True,
-    'images':[
-        'static/description/banner.png',
+    "author": "Cams Biometrics",
+    "category": "Generic Modules/Human Resources",
+    "version": "1.0",
+    "license": "AGPL-3",
+    "company": "Cams Biometrics",
+    "website": "https://www.camsunit.com",
+    "depends": ["hr","hr_attendance"],
+    "installable": True,
+    "images":[
+        "static/description/banner.png",
         ],
-    'data': [
-        'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/config.xml',
-        'views/inherited_employee_view.xml',
-    ]
+    "data": [
+        "security/ir.model.access.csv",
+        "views/res_config_settings_views.xml",
+        "views/device_service_tag_views.xml",
+        "views/hr_attendance_views.xml",
+        "views/hr_employee_views.xml",
+    ],
 }
