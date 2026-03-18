@@ -1,23 +1,200 @@
-<p>Introducing our enhanced module that seamlessly integrates biometric attendance machines with the Odoo server. With this module, you can manage your biometric devices directly from Odoo without the need for any local or cloud software. Let's explore the key features and benefits:</p>
+<!-- ============================================================
+     Cams Biometrics × Odoo — Module Description
+     Paste this into the Odoo app description editor.
+     Uses only inline styles + standard HTML — no external deps.
+     ============================================================ -->
 
-<h2>1. Real-time Data Sync:</h2>
-<p>The attendance/punch data from the biometric devices is instantly pushed to the HR Attendance module in Odoo. This ensures accurate and up-to-date records without any delay.</p>
+<!-- ── INTRO BANNER ── -->
+<div style="background:linear-gradient(135deg,#1a3f6f 0%,#0e6e55 100%);border-radius:10px;padding:36px 40px;margin-bottom:32px;color:#fff;">
+  <p style="margin:0 0 6px;font-size:12px;letter-spacing:2px;text-transform:uppercase;opacity:0.7;font-weight:600;">Cams Biometrics for Odoo HR</p>
+  <h1 style="margin:0 0 14px;font-size:26px;font-weight:800;line-height:1.25;color:#fff;">Connect Any Biometric Device to Odoo — Instantly.</h1>
+  <p style="margin:0 0 20px;font-size:15px;line-height:1.7;opacity:0.88;max-width:640px;">
+    The only biometric attendance module that supports <strong style="color:#fff;">100% of biometric machines that exist globally</strong> — including ZKTeco, eSSL, Suprema, Hikvision, Anviz, Virdi, Morpho and hundreds more. Real-time punch sync, zero extra software, zero data loss.
+  </p>
+  <!-- stat pills -->
+  <div style="display:flex;flex-wrap:wrap;gap:10px;">
+    <span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.25);border-radius:20px;padding:5px 14px;font-size:13px;font-weight:700;">150,000+ Active Devices</span>
+    <span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.25);border-radius:20px;padding:5px 14px;font-size:13px;font-weight:700;">500M+ Daily Transactions</span>
+    <span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.25);border-radius:20px;padding:5px 14px;font-size:13px;font-weight:700;">100+ Countries</span>
+    <span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.25);border-radius:20px;padding:5px 14px;font-size:13px;font-weight:700;">Odoo v13 → v19</span>
+  </div>
+</div>
 
-<h2>2. Wide Compatibility:</h2>
-<p>Our module supports a wide range of biometric machines, including all the cams biometric machines listed at Cams Products. It also extends support to approximately 90% of ZKTeco machines that have ADMS, WDMS, or Web-Server features. You can verify compatibility for other brands at our Developer Bot for Biometric Web API.</p>
 
-<h2>3. Simplified Setup:</h2>
-<p>You won't need to rely on the manufacturer's software that comes with the biometric attendance machines. Instead, communication occurs seamlessly through a secure HTTP API. Just connect your biometric devices to the internet, and the punches will be recorded directly in Odoo, ensuring a hassle-free setup process.</p>
+<!-- ── SECTION: OVERVIEW ── -->
+<p style="font-size:15px;line-height:1.8;color:#3d3d3d;margin-bottom:28px;">
+  This module seamlessly integrates biometric attendance machines with Odoo HR Attendance. Punch data flows directly from your devices into Odoo in real time — no manufacturer software, no middleware, no manual exports. Whether your devices are cloud-connected or sitting on an air-gapped factory floor, this module has a deployment path that works.
+</p>
 
-<h2>4. Offline Punch Synchronization:</h2>
-<p>In case your biometric device goes offline, don't worry. Our module automatically synchronizes any offline punches with Odoo as soon as the device is back online. This guarantees that no attendance data is lost or overlooked.</p>
 
-<h2>5. Customizable and Scalable:</h2>
-<p>The module can be easily customized to receive user and biometric information from the hardware, offering flexibility to tailor it to your specific requirements. Additionally, it can handle a large number of biometric devices, making it suitable for businesses of all sizes.</p>
+<!-- ── SECTION: 100% COMPATIBILITY ── -->
+<h2 style="font-size:19px;font-weight:800;color:#1a3f6f;border-left:4px solid #1a3f6f;padding-left:12px;margin:0 0 16px;">100% Global Device Compatibility</h2>
 
-<h2>6. Valid API License:</h2>
-<p>Please ensure that your biometric device has a valid API license, as described at <a href="https://camsunit.com/product/cams-protocol-update-for-enabling-api-to-biometric-attendance-system.html">https://camsunit.com/product/cams-protocol-update-for-enabling-api-to-biometric-attendance-system.html</a>. This ensures seamless communication and compatibility with our module.</p>
+<p style="font-size:14px;line-height:1.8;color:#3d3d3d;margin-bottom:14px;">
+  Unlike other modules that support only a subset of brands, Cams Biometrics covers <strong>every biometric machine that exists in the world</strong> through two complementary deployment architectures:
+</p>
 
-<p>Streamline your attendance management process with our integrated solution, eliminating the need for additional software and ensuring accurate attendance records in real-time. Experience the convenience and efficiency of biometric attendance integration with Odoo.</p>
+<!-- two-column architecture cards -->
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px;">
 
-<p>For Customization and Developer Support: <a href="mailto:support@camsunit.com"> support@camsunit.com </a> or whatsapp to <a href="https://wa.me/919840981006">+91-98409-81006</a> <br></p>
+  <div style="border:1px solid #c8e6c9;border-radius:8px;padding:20px;background:#f1f8e9;">
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#388e3c;margin-bottom:8px;">✦ Native Push</div>
+    <p style="margin:0 0 8px;font-size:14px;font-weight:700;color:#1b5e20;">Real-time · Direct · Full-featured</p>
+    <p style="margin:0;font-size:13px;color:#4a4a4a;line-height:1.7;">Compatible devices push attendance data directly to Odoo over HTTPS the moment a punch happens — sub-second latency, no intermediary required. Includes full REST API for remote user enrollment and device management.</p>
+  </div>
+
+  <div style="border:1px solid #bbdefb;border-radius:8px;padding:20px;background:#e3f2fd;">
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#1565c0;margin-bottom:8px;">✦ Hybrid Push</div>
+    <p style="margin:0 0 8px;font-size:14px;font-weight:700;color:#0d3c61;">Legacy · Air-gapped · Any Network</p>
+    <p style="margin:0;font-size:13px;color:#4a4a4a;line-height:1.7;">For older devices, proprietary protocols, or isolated networks — a lightweight on-premise service bridges the gap. Works behind firewalls, on factory OT networks, and in SCIF/healthcare environments without any device internet access required.</p>
+  </div>
+
+</div>
+
+<p style="font-size:13px;line-height:1.7;color:#555;background:#fffde7;border:1px solid #ffe082;border-radius:6px;padding:12px 16px;margin-bottom:28px;">
+  🌐 <strong>One API. Any Device. Any Network. Any ERP.</strong> — Verify your device and explore both architectures at the
+  <a href="https://forum.camsbiometrics.com/universal-deployment-100-global-device-compatibility-for-biometric-attendance-systems/" style="color:#1565c0;">Universal Deployment Guide →</a>
+</p>
+
+
+<!-- ── SECTION: SUPPORTED BRANDS ── -->
+<h2 style="font-size:19px;font-weight:800;color:#1a3f6f;border-left:4px solid #1a3f6f;padding-left:12px;margin:0 0 16px;">Supported Device Brands</h2>
+
+<p style="font-size:14px;color:#555;margin-bottom:12px;">Includes — but not limited to:</p>
+
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px;">
+  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:5px;padding:4px 12px;font-size:13px;font-weight:600;color:#3730a3;">Cams Biometrics</span>
+  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:5px;padding:4px 12px;font-size:13px;font-weight:600;color:#3730a3;">ZKTeco</span>
+  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:5px;padding:4px 12px;font-size:13px;font-weight:600;color:#3730a3;">eSSL / Matrix Comsec</span>
+  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:5px;padding:4px 12px;font-size:13px;font-weight:600;color:#3730a3;">Suprema BioStar</span>
+  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:5px;padding:4px 12px;font-size:13px;font-weight:600;color:#3730a3;">Hikvision</span>
+  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:5px;padding:4px 12px;font-size:13px;font-weight:600;color:#3730a3;">Anviz</span>
+  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:5px;padding:4px 12px;font-size:13px;font-weight:600;color:#3730a3;">Morpho / IDEMIA</span>
+  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:5px;padding:4px 12px;font-size:13px;font-weight:600;color:#3730a3;">Virdi</span>
+  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:5px;padding:4px 12px;font-size:13px;font-weight:600;color:#3730a3;">Mantra</span>
+  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:5px;padding:4px 12px;font-size:13px;font-weight:600;color:#3730a3;">Nitgen</span>
+  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:5px;padding:4px 12px;font-size:13px;font-weight:600;color:#3730a3;">Realtime / Startek</span>
+  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:5px;padding:4px 12px;font-size:13px;font-weight:600;color:#3730a3;">Biomax</span>
+  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:5px;padding:4px 12px;font-size:13px;font-weight:600;color:#3730a3;">Secugen</span>
+  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:5px;padding:4px 12px;font-size:13px;font-weight:600;color:#3730a3;">Time Watch</span>
+  <span style="background:#f3f4f6;border:1px solid #d1d5db;border-radius:5px;padding:4px 12px;font-size:13px;color:#6b7280;">+ hundreds more</span>
+</div>
+
+
+<!-- ── SECTION: KEY FEATURES ── -->
+<h2 style="font-size:19px;font-weight:800;color:#1a3f6f;border-left:4px solid #1a3f6f;padding-left:12px;margin:0 0 20px;">Key Features</h2>
+
+<!-- feature list — alternating rows -->
+<table style="width:100%;border-collapse:collapse;margin-bottom:28px;">
+  <tbody>
+
+    <tr style="background:#f9fafb;">
+      <td style="width:48px;padding:16px 12px 16px 16px;vertical-align:top;text-align:center;font-size:22px;">⚡</td>
+      <td style="padding:16px 16px 16px 4px;border-bottom:1px solid #e5e7eb;">
+        <strong style="font-size:14px;color:#111;">1. Real-time Punch Sync</strong><br>
+        <span style="font-size:13px;color:#555;line-height:1.7;">Attendance data is pushed from the device to Odoo HR Attendance the instant a punch occurs — no polling delays, no manual exports, no gaps.</span>
+      </td>
+    </tr>
+
+    <tr style="background:#fff;">
+      <td style="width:48px;padding:16px 12px 16px 16px;vertical-align:top;text-align:center;font-size:22px;">🌐</td>
+      <td style="padding:16px 16px 16px 4px;border-bottom:1px solid #e5e7eb;">
+        <strong style="font-size:14px;color:#111;">2. 100% Global Device Compatibility</strong><br>
+        <span style="font-size:13px;color:#555;line-height:1.7;">Every biometric attendance machine that exists in the world is supported — through Native Push for cloud-capable devices and Hybrid Push for legacy or network-restricted hardware. No device is left behind.</span>
+      </td>
+    </tr>
+
+    <tr style="background:#f9fafb;">
+      <td style="width:48px;padding:16px 12px 16px 16px;vertical-align:top;text-align:center;font-size:22px;">🔌</td>
+      <td style="padding:16px 16px 16px 4px;border-bottom:1px solid #e5e7eb;">
+        <strong style="font-size:14px;color:#111;">3. Zero Extra Software</strong><br>
+        <span style="font-size:13px;color:#555;line-height:1.7;">No manufacturer software, no ZKTeco ADMS server, no third-party middleware. Communication happens through a secure HTTP API. Connect your device to the internet — punches land in Odoo automatically.</span>
+      </td>
+    </tr>
+
+    <tr style="background:#fff;">
+      <td style="width:48px;padding:16px 12px 16px 16px;vertical-align:top;text-align:center;font-size:22px;">☁️</td>
+      <td style="padding:16px 16px 16px 4px;border-bottom:1px solid #e5e7eb;">
+        <strong style="font-size:14px;color:#111;">4. Offline Punch Synchronization</strong><br>
+        <span style="font-size:13px;color:#555;line-height:1.7;">If a device loses connectivity, punches are stored locally on the device or intermediary service. The moment connectivity is restored, all queued records sync to Odoo automatically — zero data loss guaranteed.</span>
+      </td>
+    </tr>
+
+    <tr style="background:#f9fafb;">
+      <td style="width:48px;padding:16px 12px 16px 16px;vertical-align:top;text-align:center;font-size:22px;">⚙️</td>
+      <td style="padding:16px 16px 16px 4px;border-bottom:1px solid #e5e7eb;">
+        <strong style="font-size:14px;color:#111;">5. Customizable &amp; Scalable</strong><br>
+        <span style="font-size:13px;color:#555;line-height:1.7;">Tailor the integration to your HR workflows. Handles any fleet size — from a single office to enterprise-wide deployments spanning thousands of devices across hundreds of locations globally.</span>
+      </td>
+    </tr>
+
+    <tr style="background:#fff;">
+      <td style="width:48px;padding:16px 12px 16px 16px;vertical-align:top;text-align:center;font-size:22px;">🔑</td>
+      <td style="padding:16px 16px 16px 4px;">
+        <strong style="font-size:14px;color:#111;">6. Valid API License Required</strong><br>
+        <span style="font-size:13px;color:#555;line-height:1.7;">Your biometric device must have a valid API license to communicate with this module. Check the
+          <a href="https://camsbiometrics.com/product/cams-protocol-update-for-enabling-api-to-biometric-attendance-system.html" style="color:#1565c0;">API licensing guide</a> to enable it on your device.</span>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+<!-- ── SECTION: HOW IT WORKS ── -->
+<h2 style="font-size:19px;font-weight:800;color:#1a3f6f;border-left:4px solid #1a3f6f;padding-left:12px;margin:0 0 16px;">How It Works</h2>
+
+<ol style="font-size:14px;color:#3d3d3d;line-height:2;padding-left:20px;margin-bottom:28px;">
+  <li><strong>Check compatibility</strong> — Visit <a href="https://developer.camsbiometrics.com" style="color:#1565c0;">developer.camsbiometrics.com</a> to verify your device. Compatible devices use Native Push. Others use Hybrid Push.</li>
+  <li><strong>Configure your device</strong> — Point it to the Cams Biometrics cloud API endpoint. Ensure a valid API license is active on the device.</li>
+  <li><strong>Install this module</strong> — Install in your Odoo instance and link your device credentials.</li>
+  <li><strong>Go live</strong> — Punch data flows into HR Attendance in real time. Offline punches sync automatically on reconnect. No further action needed.</li>
+</ol>
+
+
+<!-- ── SECTION: DEPLOYMENT SCENARIOS ── -->
+<h2 style="font-size:19px;font-weight:800;color:#1a3f6f;border-left:4px solid #1a3f6f;padding-left:12px;margin:0 0 16px;">Works In Every Environment</h2>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:32px;">
+
+  <div style="border:1px solid #e0e0e0;border-radius:8px;padding:16px;">
+    <p style="margin:0 0 6px;font-size:13px;font-weight:700;color:#111;">🏬 Retail &amp; Branch Networks</p>
+    <p style="margin:0;font-size:12px;color:#666;line-height:1.6;">Devices at each location push directly to Odoo cloud. Real-time visibility for shift managers.</p>
+  </div>
+
+  <div style="border:1px solid #e0e0e0;border-radius:8px;padding:16px;">
+    <p style="margin:0 0 6px;font-size:13px;font-weight:700;color:#111;">🏭 Manufacturing &amp; Air-gapped OT Networks</p>
+    <p style="margin:0;font-size:12px;color:#666;line-height:1.6;">Hybrid Push bridges isolated production networks — devices never touch the internet.</p>
+  </div>
+
+  <div style="border:1px solid #e0e0e0;border-radius:8px;padding:16px;">
+    <p style="margin:0 0 6px;font-size:13px;font-weight:700;color:#111;">🏥 Healthcare &amp; Regulated Industries</p>
+    <p style="margin:0;font-size:12px;color:#666;line-height:1.6;">HIPAA/PCI-compliant deployments with full data sovereignty — biometric templates stay on-premise.</p>
+  </div>
+
+  <div style="border:1px solid #e0e0e0;border-radius:8px;padding:16px;">
+    <p style="margin:0 0 6px;font-size:13px;font-weight:700;color:#111;">🏢 Corporate Multi-site</p>
+    <p style="margin:0;font-size:12px;color:#666;line-height:1.6;">Manage thousands of devices across global offices from a single Odoo instance.</p>
+  </div>
+
+</div>
+
+
+<!-- ── CLOSING STATEMENT ── -->
+<p style="font-size:14px;line-height:1.8;color:#3d3d3d;margin-bottom:28px;">
+  Streamline your attendance management by eliminating manual data entry, third-party sync tools, and vendor lock-in. Whether you have 5 devices or 5,000 — across one office or one hundred countries — this module keeps Odoo HR Attendance accurate, real-time and fully automated.
+</p>
+
+
+<!-- ── SUPPORT FOOTER ── -->
+<div style="background:#f8f9fa;border:1px solid #e0e0e0;border-radius:8px;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+  <div>
+    <p style="margin:0 0 4px;font-size:14px;font-weight:700;color:#111;">For Customization &amp; Developer Support</p>
+    <p style="margin:0;font-size:13px;color:#555;">Cams Biometrics · <a href="https://www.camsbiometrics.com" style="color:#1565c0;">camsbiometrics.com</a></p>
+  </div>
+  <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
+    <a href="mailto:support@camsbiometrics.com" style="font-size:13px;color:#1565c0;text-decoration:none;">✉ support@camsbiometrics.com</a>
+    <span style="color:#ccc;">|</span>
+    <a href="https://wa.me/919840941006" style="font-size:13px;color:#1565c0;text-decoration:none;">💬 WhatsApp +91-98409-41006</a>
+  </div>
+</div>
