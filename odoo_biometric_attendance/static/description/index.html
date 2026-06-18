@@ -1,112 +1,265 @@
-<p style="font-size:16px;line-height:1.9;color:#374151;margin:0 0 34px 0;">
+<div id="cams_desc" style="max-width:1000px;margin:0 auto;font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#374151;line-height:1.6;-webkit-font-smoothing:antialiased;">
+
+<style>
+#cams_desc .cams-card{transition:transform .15s ease,box-shadow .15s ease;}
+#cams_desc .cams-card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(22,38,107,.13);}
+#cams_desc a.cams-btn{transition:filter .15s ease,transform .15s ease;}
+#cams_desc a.cams-btn:hover{filter:brightness(1.08);transform:translateY(-1px);}
+#cams_desc a.cams-link:hover{text-decoration:underline;}
+#cams_desc .cams-chip:hover{background:#1d3a8a !important;color:#fff !important;border-color:#1d3a8a !important;}
+@media (max-width:760px){
+  #cams_desc .cams-grid-3{grid-template-columns:1fr !important;}
+  #cams_desc .cams-grid-2{grid-template-columns:1fr !important;}
+  #cams_desc .cams-grid-4{grid-template-columns:1fr 1fr !important;}
+  #cams_desc .cams-hero-h1{font-size:30px !important;}
+  #cams_desc .cams-flow{flex-direction:column !important;}
+  #cams_desc .cams-flow-arrow{transform:rotate(90deg);}
+}
+</style>
+
+<!-- ============ HERO ============ -->
+<section style="position:relative;overflow:hidden;border-radius:16px;background:linear-gradient(135deg,#29abe2 0%,#1d3a8a 55%,#16266b 100%);padding:44px 44px 40px 44px;color:#ffffff;box-shadow:0 18px 40px rgba(22,38,107,.25);">
+
+  <!-- brand lockup -->
+  <div style="display:inline-block;background:#ffffff;border-radius:10px;padding:10px 18px;margin-bottom:26px;box-shadow:0 6px 16px rgba(0,0,0,.12);">
+    <img src="cams-biometrics-banner.png" alt="Cams Biometrics" style="display:block;height:34px;width:auto;">
+  </div>
+
+  <div style="display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);border-radius:30px;padding:6px 16px;font-size:12.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;margin-bottom:18px;">
+    Real-time integration for Odoo HR Attendance
+  </div>
+
+  <h1 class="cams-hero-h1" style="font-size:40px;line-height:1.15;font-weight:800;margin:0 0 16px 0;color:#ffffff;letter-spacing:-.5px;">
+    Biometric Attendance<br>Integration Module
+  </h1>
+
+  <p style="font-size:18px;line-height:1.7;max-width:680px;margin:0 0 26px 0;color:#eaf4fc;">
+    Push punch data straight from your biometric devices into Odoo HR Attendance &mdash; in real time, with <strong style="color:#ffffff;">no manufacturer software, no middleware, and no manual exports.</strong> Works with biometric machines worldwide, from modern cloud terminals to legacy hardware on air-gapped networks.
+  </p>
+
+  <div style="display:flex;flex-wrap:wrap;gap:10px;">
+    <span style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);border-radius:8px;padding:9px 16px;font-size:14px;font-weight:600;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h8l-1 8 10-12h-8l1-8z"/></svg>Sub-second sync</span>
+    <span style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);border-radius:8px;padding:9px 16px;font-size:14px;font-weight:600;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>Global device coverage</span>
+    <span style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);border-radius:8px;padding:9px 16px;font-size:14px;font-weight:600;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Secure HTTPS API</span>
+    <span style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);border-radius:8px;padding:9px 16px;font-size:14px;font-weight:600;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>Offline-safe queue</span>
+  </div>
+</section>
+
+<!-- ============ STAT STRIP ============ -->
+<div class="cams-grid-4" style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:22px 0 8px 0;">
+  <div style="text-align:center;border:1px solid #e5e7eb;border-radius:10px;padding:20px 12px;background:#ffffff;">
+    <div style="font-size:28px;font-weight:800;color:#16266b;">100%</div>
+    <div style="font-size:13px;color:#6b7280;font-weight:600;margin-top:2px;">Device compatibility</div>
+  </div>
+  <div style="text-align:center;border:1px solid #e5e7eb;border-radius:10px;padding:20px 12px;background:#ffffff;">
+    <div style="font-size:28px;font-weight:800;color:#16266b;">&lt;1s</div>
+    <div style="font-size:13px;color:#6b7280;font-weight:600;margin-top:2px;">Punch sync latency</div>
+  </div>
+  <div style="text-align:center;border:1px solid #e5e7eb;border-radius:10px;padding:20px 12px;background:#ffffff;">
+    <div style="font-size:28px;font-weight:800;color:#16266b;">0</div>
+    <div style="font-size:13px;color:#6b7280;font-weight:600;margin-top:2px;">Extra software needed</div>
+  </div>
+  <div style="text-align:center;border:1px solid #e5e7eb;border-radius:10px;padding:20px 12px;background:#ffffff;">
+    <div style="font-size:28px;font-weight:800;color:#16266b;">13+</div>
+    <div style="font-size:13px;color:#6b7280;font-weight:600;margin-top:2px;">Supported brands</div>
+  </div>
+</div>
+
+<!-- ============ INTRO ============ -->
+<p style="font-size:16px;line-height:1.85;color:#374151;margin:30px 0 36px 0;">
   This module seamlessly integrates biometric attendance machines with Odoo HR Attendance. Punch data is pushed directly from your devices into Odoo in real time &mdash; no manufacturer software, no middleware, no manual exports. It works with <strong>every biometric machine that exists globally</strong>, from brand-new cloud-capable terminals to decade-old legacy hardware on air-gapped factory networks.
 </p>
- 
-<h2 style="font-size:20px;font-weight:800;color:#0f4c81;border-left:4px solid #0f4c81;padding-left:12px;margin:0 0 16px 0;">1. 100% Global Device Compatibility</h2>
 
-<p style="font-size:16px;line-height:1.85;color:#374151;margin:0 0 16px 0;">Every biometric device on the planet is covered through two deployment architectures:</p>
+<!-- ============ KEY FEATURES ============ -->
+<h2 style="font-size:13px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#29abe2;margin:0 0 6px 0;">Key Features</h2>
+<h3 style="font-size:26px;font-weight:800;color:#16266b;margin:0 0 24px 0;letter-spacing:-.3px;">Everything you need for automated attendance</h3>
 
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;">
-  <div style="border:1px solid #bbf7d0;border-radius:7px;padding:22px;background:#f0fdf4;">
-    <p style="margin:0 0 6px 0;font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#16a34a;">NATIVE PUSH</p>
-    <p style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#14532d;">Real-time &bull; Direct &bull; Full API</p>
-    <p style="margin:0;font-size:15px;color:#374151;line-height:1.75;">For devices verified at developer.camsbiometrics.com. The device pushes punch data directly to Odoo over HTTPS the moment it happens &mdash; sub-second latency, no intermediary required.</p>
+<div class="cams-grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:40px;">
+
+  <!-- Global compatibility -->
+  <div class="cams-card" style="border:1px solid #e5e7eb;border-radius:12px;padding:24px;background:#ffffff;">
+    <div style="width:46px;height:46px;border-radius:11px;background:#eef6fd;display:flex;align-items:center;justify-content:center;margin-bottom:14px;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1d3a8a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+    </div>
+    <h4 style="font-size:17px;font-weight:700;color:#111827;margin:0 0 8px 0;">100% Global Compatibility</h4>
+    <p style="font-size:14.5px;color:#6b7280;line-height:1.7;margin:0;">Every biometric device on the planet is covered through two deployment architectures &mdash; modern or legacy, online or air-gapped.</p>
   </div>
-  <div style="border:1px solid #bfdbfe;border-radius:7px;padding:22px;background:#eff6ff;">
-    <p style="margin:0 0 6px 0;font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#1d4ed8;">HYBRID PUSH</p>
-    <p style="margin:0 0 10px 0;font-size:16px;font-weight:700;color:#1e3a5f;">Legacy &bull; Air-gapped &bull; Any Network</p>
-    <p style="margin:0;font-size:15px;color:#374151;line-height:1.75;">For all other devices. Punch data is collected via SDK or database connector &mdash; through a public IP or a push service on a local computer &mdash; and forwarded to Odoo through the API.</p>
+
+  <!-- Real-time sync -->
+  <div class="cams-card" style="border:1px solid #e5e7eb;border-radius:12px;padding:24px;background:#ffffff;">
+    <div style="width:46px;height:46px;border-radius:11px;background:#eef6fd;display:flex;align-items:center;justify-content:center;margin-bottom:14px;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1d3a8a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h8l-1 8 10-12h-8l1-8z"/></svg>
+    </div>
+    <h4 style="font-size:17px;font-weight:700;color:#111827;margin:0 0 8px 0;">Real-time Punch Sync</h4>
+    <p style="font-size:14.5px;color:#6b7280;line-height:1.7;margin:0;">Records appear in Odoo the moment an employee checks in or out &mdash; accurate, up to date, with zero delay.</p>
+  </div>
+
+  <!-- Zero software -->
+  <div class="cams-card" style="border:1px solid #e5e7eb;border-radius:12px;padding:24px;background:#ffffff;">
+    <div style="width:46px;height:46px;border-radius:11px;background:#eef6fd;display:flex;align-items:center;justify-content:center;margin-bottom:14px;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1d3a8a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+    </div>
+    <h4 style="font-size:17px;font-weight:700;color:#111827;margin:0 0 8px 0;">Zero Extra Software</h4>
+    <p style="font-size:14.5px;color:#6b7280;line-height:1.7;margin:0;">No manufacturer tools, no ZKTeco ADMS server, no third-party sync utilities. Everything runs over a secure HTTP API.</p>
+  </div>
+
+  <!-- Offline sync -->
+  <div class="cams-card" style="border:1px solid #e5e7eb;border-radius:12px;padding:24px;background:#ffffff;">
+    <div style="width:46px;height:46px;border-radius:11px;background:#eef6fd;display:flex;align-items:center;justify-content:center;margin-bottom:14px;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1d3a8a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 0-9 6 6 0 0 0-11.6-1.5A4 4 0 0 0 6 19"/><path d="M12 11v6m0 0 2.5-2.5M12 17l-2.5-2.5"/></svg>
+    </div>
+    <h4 style="font-size:17px;font-weight:700;color:#111827;margin:0 0 8px 0;">Offline Synchronization</h4>
+    <p style="font-size:14.5px;color:#6b7280;line-height:1.7;margin:0;">Lost connectivity? Punches queue locally and sync automatically in chronological order the moment the link is restored. No data loss, ever.</p>
+  </div>
+
+  <!-- Scalable -->
+  <div class="cams-card" style="border:1px solid #e5e7eb;border-radius:12px;padding:24px;background:#ffffff;">
+    <div style="width:46px;height:46px;border-radius:11px;background:#eef6fd;display:flex;align-items:center;justify-content:center;margin-bottom:14px;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1d3a8a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 8l10 5 10-5-10-5z"/><path d="M2 13l10 5 10-5M2 18l10 5 10-5"/></svg>
+    </div>
+    <h4 style="font-size:17px;font-weight:700;color:#111827;margin:0 0 8px 0;">Customizable &amp; Scalable</h4>
+    <p style="font-size:14.5px;color:#6b7280;line-height:1.7;margin:0;">Tailor it to your HR workflows. Scales from a single office to thousands of devices across hundreds of locations worldwide.</p>
+  </div>
+
+  <!-- Secure API -->
+  <div class="cams-card" style="border:1px solid #e5e7eb;border-radius:12px;padding:24px;background:#ffffff;">
+    <div style="width:46px;height:46px;border-radius:11px;background:#eef6fd;display:flex;align-items:center;justify-content:center;margin-bottom:14px;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1d3a8a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5l-8-3z"/><path d="M9 12l2 2 4-4"/></svg>
+    </div>
+    <h4 style="font-size:17px;font-weight:700;color:#111827;margin:0 0 8px 0;">Secure API &amp; Licensing</h4>
+    <p style="font-size:14.5px;color:#6b7280;line-height:1.7;margin:0;">Encrypted HTTPS transport with transparent, per-device API activation and licensing &mdash; no hidden integration fees.</p>
+  </div>
+
+</div>
+
+<!-- ============ DEPLOYMENT ARCHITECTURES ============ -->
+<div style="background:#f8fafc;border:1px solid #e5e7eb;border-radius:14px;padding:32px;margin-bottom:40px;">
+  <h2 style="font-size:13px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#29abe2;margin:0 0 6px 0;">Universal Deployment</h2>
+  <h3 style="font-size:24px;font-weight:800;color:#16266b;margin:0 0 8px 0;letter-spacing:-.3px;">Two ways to connect &mdash; 100% device coverage</h3>
+  <p style="font-size:15.5px;line-height:1.75;color:#374151;margin:0 0 24px 0;">Every biometric device on the planet is covered through one of two deployment architectures:</p>
+
+  <!-- flow diagram -->
+  <div class="cams-flow" style="display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;margin:0 0 26px 0;">
+    <div style="background:#ffffff;border:1px solid #d7e3f4;border-radius:10px;padding:16px 20px;text-align:center;min-width:140px;">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1d3a8a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:6px;"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="10" r="2.5"/><path d="M8.5 17h7"/></svg>
+      <div style="font-size:14px;font-weight:700;color:#16266b;">Biometric Device</div>
+      <div style="font-size:12px;color:#6b7280;">Punch event</div>
+    </div>
+    <div class="cams-flow-arrow" style="font-size:24px;color:#29abe2;font-weight:800;">&rarr;</div>
+    <div style="background:#ffffff;border:1px solid #d7e3f4;border-radius:10px;padding:16px 20px;text-align:center;min-width:140px;">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1d3a8a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:6px;"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+      <div style="font-size:14px;font-weight:700;color:#16266b;">Secure HTTPS API</div>
+      <div style="font-size:12px;color:#6b7280;">Native or Hybrid push</div>
+    </div>
+    <div class="cams-flow-arrow" style="font-size:24px;color:#29abe2;font-weight:800;">&rarr;</div>
+    <div style="background:#ffffff;border:1px solid #d7e3f4;border-radius:10px;padding:16px 20px;text-align:center;min-width:140px;">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:6px;"><circle cx="12" cy="12" r="9"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
+      <div style="font-size:14px;font-weight:700;color:#16266b;">Odoo HR Attendance</div>
+      <div style="font-size:12px;color:#6b7280;">Record created</div>
+    </div>
+  </div>
+
+  <div class="cams-grid-2" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px;">
+    <div class="cams-card" style="border:1px solid #bbf7d0;border-radius:11px;padding:24px;background:#f0fdf4;">
+      <p style="margin:0 0 6px 0;font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#16a34a;">Native Push</p>
+      <p style="margin:0 0 12px 0;font-size:16px;font-weight:700;color:#14532d;">Real-time &bull; Direct &bull; Full API</p>
+      <p style="margin:0;font-size:14.5px;color:#374151;line-height:1.75;">For devices verified at <strong>developer.camsbiometrics.com</strong>. The device pushes punch data directly to Odoo over HTTPS the moment it happens &mdash; sub-second latency, no intermediary required.</p>
+    </div>
+    <div class="cams-card" style="border:1px solid #bfdbfe;border-radius:11px;padding:24px;background:#eff6ff;">
+      <p style="margin:0 0 6px 0;font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#1d4ed8;">Hybrid Push</p>
+      <p style="margin:0 0 12px 0;font-size:16px;font-weight:700;color:#1e3a5f;">Legacy &bull; Air-gapped &bull; Any Network</p>
+      <p style="margin:0;font-size:14.5px;color:#374151;line-height:1.75;">For all other devices. Punch data is collected via SDK or database connector &mdash; through a public IP or a push service on a local computer &mdash; and forwarded to Odoo through the API.</p>
+    </div>
+  </div>
+
+  <div style="font-size:14.5px;line-height:1.75;color:#374151;background:#fefce8;border:1px solid #fde68a;border-radius:8px;padding:16px 20px;">
+    <strong>One API. Any Device. Any Network. Any ERP.</strong> &mdash; Read the full architecture guide:
+    <a class="cams-link" href="https://forum.camsbiometrics.com/universal-deployment-100-global-device-compatibility-for-biometric-attendance-systems/" style="color:#1d4ed8;font-weight:600;text-decoration:none;">Universal Deployment Guide &rarr;</a>
   </div>
 </div>
 
-<p style="margin:0 0 34px 0;font-size:15px;line-height:1.75;color:#374151;background:#fefce8;border:1px solid #fde68a;border-radius:6px;padding:14px 18px;">
-  <strong>One API. Any Device. Any Network. Any ERP.</strong> &mdash; Read the full architecture guide: <a href="https://forum.camsbiometrics.com/universal-deployment-100-global-device-compatibility-for-biometric-attendance-systems/" style="color:#1d4ed8;font-weight:600;">Universal Deployment Guide &rarr; (https://forum.camsbiometrics.com/universal-deployment-100-global-device-compatibility-for-biometric-attendance-systems/)</a>
-</p>
-
-<h2 style="font-size:20px;font-weight:800;color:#0f4c81;border-left:4px solid #0f4c81;padding-left:12px;margin:0 0 14px 0;">2. Real-time Punch Sync</h2>
-<p style="font-size:16px;line-height:1.9;color:#374151;margin:0 0 34px 0;">
-  Attendance and punch data is instantly pushed from biometric devices directly into the Odoo HR Attendance module. Records appear in Odoo the moment an employee checks in or out &mdash; accurate, up-to-date, with zero delay.
-</p>
-
-<h2 style="font-size:20px;font-weight:800;color:#0f4c81;border-left:4px solid #0f4c81;padding-left:12px;margin:0 0 14px 0;">3. Zero Extra Software</h2>
-<p style="font-size:16px;line-height:1.9;color:#374151;margin:0 0 34px 0;">
-  No manufacturer software. No ZKTeco ADMS server. No third-party sync tools. Communication happens entirely through a secure HTTP API. Simply connect your biometric device to the internet and punches are recorded directly in Odoo &mdash; a truly hassle-free setup.
-</p>
-
-<h2 style="font-size:20px;font-weight:800;color:#0f4c81;border-left:4px solid #0f4c81;padding-left:12px;margin:0 0 14px 0;">4. Offline Punch Synchronization</h2>
-<p style="font-size:16px;line-height:1.9;color:#374151;margin:0 0 34px 0;">
-  If your biometric device loses connectivity, punches are stored locally on the device or intermediary service. The moment connectivity is restored, all queued records sync to Odoo automatically in chronological order &mdash; no manual intervention, no data loss, ever.
-</p>
-
-<h2 style="font-size:20px;font-weight:800;color:#0f4c81;border-left:4px solid #0f4c81;padding-left:12px;margin:0 0 14px 0;">5. Customizable and Scalable</h2>
-<p style="font-size:16px;line-height:1.9;color:#374151;margin:0 0 34px 0;">
-  The module can be customized to receive user and biometric information from hardware, offering flexibility to tailor it to your specific HR workflows. It scales from a single office to enterprise-wide deployments spanning thousands of devices across hundreds of locations globally.
-</p>
-
-<h2 style="font-size:20px;font-weight:800;color:#0f4c81;border-left:4px solid #0f4c81;padding-left:12px;margin:0 0 14px 0;">6. API Activation and License</h2>
-<p style="font-size:16px;line-height:1.9;color:#374151;margin:0 0 10px 0;">Every device requires two things to communicate through the API &mdash; regardless of whether it uses Native Push or Hybrid Push:</p>
-<ul style="font-size:16px;line-height:2;color:#374151;margin:0 0 14px 0;padding-left:22px;">
-  <li><strong>Native Push devices</strong> &mdash; API Activation (one-time, no expiry) + API License (1 year, multi-year, or lifetime)</li>
-  <li><strong>Hybrid Push devices</strong> &mdash; Hybrid Push Setup (one-time) + API License (1 year, multi-year, or lifetime)</li>
-</ul>
-<p style="font-size:16px;line-height:1.9;color:#374151;margin:0 0 34px 0;">
-  There is no separate integration charge for using this Odoo module &mdash; only the per-device charges above apply. For a full breakdown of the pricing model, read the <a href="https://forum.camsbiometrics.com/api-activation-and-api-license-understanding-the-charges-for-biometric-device-integration/" style="color:#1d4ed8;font-weight:600;">API Activation and License Guide &rarr; (https://forum.camsbiometrics.com/api-activation-and-api-license-understanding-the-charges-for-biometric-device-integration/)</a>
-</p>
-
-<h2 style="font-size:20px;font-weight:800;color:#0f4c81;border-left:4px solid #0f4c81;padding-left:12px;margin:0 0 14px 0;">Supported Device Brands</h2>
-<p style="font-size:15px;color:#6b7280;margin:0 0 12px 0;">Includes &mdash; but is not limited to:</p>
-<div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:34px;">
-  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:4px;padding:6px 14px;font-size:14px;font-weight:700;color:#3730a3;">Cams Biometrics</span>
-  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:4px;padding:6px 14px;font-size:14px;font-weight:700;color:#3730a3;">ZKTeco</span>
-  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:4px;padding:6px 14px;font-size:14px;font-weight:700;color:#3730a3;">eSSL / Matrix Comsec</span>
-  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:4px;padding:6px 14px;font-size:14px;font-weight:700;color:#3730a3;">Suprema</span>
-  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:4px;padding:6px 14px;font-size:14px;font-weight:700;color:#3730a3;">Hikvision</span>
-  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:4px;padding:6px 14px;font-size:14px;font-weight:700;color:#3730a3;">Anviz</span>
-  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:4px;padding:6px 14px;font-size:14px;font-weight:700;color:#3730a3;">Morpho / IDEMIA</span>
-  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:4px;padding:6px 14px;font-size:14px;font-weight:700;color:#3730a3;">Virdi</span>
-  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:4px;padding:6px 14px;font-size:14px;font-weight:700;color:#3730a3;">Mantra</span>
-  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:4px;padding:6px 14px;font-size:14px;font-weight:700;color:#3730a3;">Nitgen</span>
-  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:4px;padding:6px 14px;font-size:14px;font-weight:700;color:#3730a3;">Realtime / Startek</span>
-  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:4px;padding:6px 14px;font-size:14px;font-weight:700;color:#3730a3;">Biomax</span>
-  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:4px;padding:6px 14px;font-size:14px;font-weight:700;color:#3730a3;">Secugen</span>
-  <span style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:4px;padding:6px 14px;font-size:14px;font-weight:700;color:#3730a3;">Time Watch</span>
-  <span style="background:#f3f4f6;border:1px solid #d1d5db;border-radius:4px;padding:6px 14px;font-size:14px;color:#6b7280;">+ hundreds more</span>
+<!-- ============ SUPPORTED BRANDS ============ -->
+<h2 style="font-size:13px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#29abe2;margin:0 0 6px 0;">Hardware</h2>
+<h3 style="font-size:24px;font-weight:800;color:#16266b;margin:0 0 6px 0;letter-spacing:-.3px;">Supported Device Brands</h3>
+<p style="font-size:14.5px;color:#6b7280;margin:0 0 16px 0;">Includes &mdash; but is not limited to:</p>
+<div style="display:flex;flex-wrap:wrap;gap:9px;margin-bottom:40px;">
+  <span class="cams-chip" style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:7px;padding:8px 15px;font-size:14px;font-weight:700;color:#3730a3;transition:all .15s ease;">Cams Biometrics</span>
+  <span class="cams-chip" style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:7px;padding:8px 15px;font-size:14px;font-weight:700;color:#3730a3;transition:all .15s ease;">ZKTeco</span>
+  <span class="cams-chip" style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:7px;padding:8px 15px;font-size:14px;font-weight:700;color:#3730a3;transition:all .15s ease;">eSSL / Matrix Comsec</span>
+  <span class="cams-chip" style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:7px;padding:8px 15px;font-size:14px;font-weight:700;color:#3730a3;transition:all .15s ease;">Suprema</span>
+  <span class="cams-chip" style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:7px;padding:8px 15px;font-size:14px;font-weight:700;color:#3730a3;transition:all .15s ease;">Hikvision</span>
+  <span class="cams-chip" style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:7px;padding:8px 15px;font-size:14px;font-weight:700;color:#3730a3;transition:all .15s ease;">Anviz</span>
+  <span class="cams-chip" style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:7px;padding:8px 15px;font-size:14px;font-weight:700;color:#3730a3;transition:all .15s ease;">Morpho / IDEMIA</span>
+  <span class="cams-chip" style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:7px;padding:8px 15px;font-size:14px;font-weight:700;color:#3730a3;transition:all .15s ease;">Virdi</span>
+  <span class="cams-chip" style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:7px;padding:8px 15px;font-size:14px;font-weight:700;color:#3730a3;transition:all .15s ease;">Mantra</span>
+  <span class="cams-chip" style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:7px;padding:8px 15px;font-size:14px;font-weight:700;color:#3730a3;transition:all .15s ease;">Nitgen</span>
+  <span class="cams-chip" style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:7px;padding:8px 15px;font-size:14px;font-weight:700;color:#3730a3;transition:all .15s ease;">Realtime / Startek</span>
+  <span class="cams-chip" style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:7px;padding:8px 15px;font-size:14px;font-weight:700;color:#3730a3;transition:all .15s ease;">Biomax</span>
+  <span class="cams-chip" style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:7px;padding:8px 15px;font-size:14px;font-weight:700;color:#3730a3;transition:all .15s ease;">Secugen</span>
+  <span class="cams-chip" style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:7px;padding:8px 15px;font-size:14px;font-weight:700;color:#3730a3;transition:all .15s ease;">Time Watch</span>
+  <span style="background:#f3f4f6;border:1px solid #d1d5db;border-radius:7px;padding:8px 15px;font-size:14px;color:#6b7280;">+ hundreds more</span>
 </div>
 
-<h2 style="font-size:20px;font-weight:800;color:#0f4c81;border-left:4px solid #0f4c81;padding-left:12px;margin:0 0 16px 0;">Works In Every Environment</h2>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:34px;">
-  <div style="border:1px solid #e5e7eb;border-radius:6px;padding:18px 20px;background:#fafafa;">
-    <p style="margin:0 0 6px 0;font-size:15px;font-weight:700;color:#111827;">Retail and Branch Networks</p>
-    <p style="margin:0;font-size:14px;color:#6b7280;line-height:1.7;">Devices push directly to Odoo cloud. Real-time shift visibility across all locations.</p>
+<!-- ============ ENVIRONMENTS ============ -->
+<h2 style="font-size:13px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#29abe2;margin:0 0 6px 0;">Use Cases</h2>
+<h3 style="font-size:24px;font-weight:800;color:#16266b;margin:0 0 24px 0;letter-spacing:-.3px;">Works in every environment</h3>
+<div class="cams-grid-2" style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:42px;">
+  <div class="cams-card" style="border:1px solid #e5e7eb;border-radius:11px;padding:22px;background:#ffffff;">
+    <p style="margin:0 0 7px 0;font-size:16px;font-weight:700;color:#111827;">Retail &amp; Branch Networks</p>
+    <p style="margin:0;font-size:14.5px;color:#6b7280;line-height:1.7;">Devices push directly to Odoo cloud. Real-time shift visibility across all locations.</p>
   </div>
-  <div style="border:1px solid #e5e7eb;border-radius:6px;padding:18px 20px;background:#fafafa;">
-    <p style="margin:0 0 6px 0;font-size:15px;font-weight:700;color:#111827;">Manufacturing and Air-gapped Networks</p>
-    <p style="margin:0;font-size:14px;color:#6b7280;line-height:1.7;">Hybrid Push bridges isolated OT networks &mdash; devices need no internet access.</p>
+  <div class="cams-card" style="border:1px solid #e5e7eb;border-radius:11px;padding:22px;background:#ffffff;">
+    <p style="margin:0 0 7px 0;font-size:16px;font-weight:700;color:#111827;">Manufacturing &amp; Air-gapped Networks</p>
+    <p style="margin:0;font-size:14.5px;color:#6b7280;line-height:1.7;">Hybrid Push bridges isolated OT networks &mdash; devices need no internet access.</p>
   </div>
-  <div style="border:1px solid #e5e7eb;border-radius:6px;padding:18px 20px;background:#fafafa;">
-    <p style="margin:0 0 6px 0;font-size:15px;font-weight:700;color:#111827;">Healthcare and Regulated Industries</p>
-    <p style="margin:0;font-size:14px;color:#6b7280;line-height:1.7;">HIPAA-compliant deployments &mdash; biometric templates stay fully on-premise.</p>
+  <div class="cams-card" style="border:1px solid #e5e7eb;border-radius:11px;padding:22px;background:#ffffff;">
+    <p style="margin:0 0 7px 0;font-size:16px;font-weight:700;color:#111827;">Healthcare &amp; Regulated Industries</p>
+    <p style="margin:0;font-size:14.5px;color:#6b7280;line-height:1.7;">HIPAA-compliant deployments &mdash; biometric templates stay fully on-premise.</p>
   </div>
-  <div style="border:1px solid #e5e7eb;border-radius:6px;padding:18px 20px;background:#fafafa;">
-    <p style="margin:0 0 6px 0;font-size:15px;font-weight:700;color:#111827;">Corporate Multi-site</p>
-    <p style="margin:0;font-size:14px;color:#6b7280;line-height:1.7;">Manage thousands of devices across global offices from a single Odoo instance.</p>
+  <div class="cams-card" style="border:1px solid #e5e7eb;border-radius:11px;padding:22px;background:#ffffff;">
+    <p style="margin:0 0 7px 0;font-size:16px;font-weight:700;color:#111827;">Corporate Multi-site</p>
+    <p style="margin:0;font-size:14.5px;color:#6b7280;line-height:1.7;">Manage thousands of devices across global offices from a single Odoo instance.</p>
   </div>
 </div>
 
-<p style="font-size:16px;line-height:1.9;color:#374151;margin:0 0 30px 0;">
-  Streamline your attendance management by eliminating manual exports, third-party sync tools, and vendor lock-in. Whether you have 5 devices or 50,000 &mdash; across one office or one hundred countries &mdash; this module keeps Odoo HR Attendance accurate, real-time, and fully automated.
+<!-- ============ LICENSING ============ -->
+<div style="border:1px solid #e5e7eb;border-radius:14px;padding:32px;margin-bottom:42px;background:#ffffff;">
+  <h2 style="font-size:13px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#29abe2;margin:0 0 6px 0;">Pricing</h2>
+  <h3 style="font-size:24px;font-weight:800;color:#16266b;margin:0 0 8px 0;letter-spacing:-.3px;">API activation &amp; license</h3>
+  <p style="font-size:15.5px;line-height:1.75;color:#374151;margin:0 0 18px 0;">Every device requires two things to communicate through the API &mdash; regardless of whether it uses Native Push or Hybrid Push:</p>
+
+  <div class="cams-grid-2" style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px;">
+    <div style="border-left:4px solid #16a34a;background:#f8fafc;border-radius:6px;padding:16px 18px;">
+      <p style="margin:0 0 4px 0;font-size:15px;font-weight:700;color:#14532d;">Native Push devices</p>
+      <p style="margin:0;font-size:14px;color:#6b7280;line-height:1.7;">API Activation (one-time, no expiry) + API License (1 year, multi-year, or lifetime).</p>
+    </div>
+    <div style="border-left:4px solid #1d4ed8;background:#f8fafc;border-radius:6px;padding:16px 18px;">
+      <p style="margin:0 0 4px 0;font-size:15px;font-weight:700;color:#1e3a5f;">Hybrid Push devices</p>
+      <p style="margin:0;font-size:14px;color:#6b7280;line-height:1.7;">Hybrid Push Setup (one-time) + API License (1 year, multi-year, or lifetime).</p>
+    </div>
+  </div>
+
+  <p style="font-size:15px;line-height:1.75;color:#374151;margin:0;">
+    There is <strong>no separate integration charge</strong> for using this Odoo module &mdash; only the per-device charges above apply. For a full breakdown, read the
+    <a class="cams-link" href="https://forum.camsbiometrics.com/api-activation-and-api-license-understanding-the-charges-for-biometric-device-integration/" style="color:#1d4ed8;font-weight:600;text-decoration:none;">API Activation &amp; License Guide &rarr;</a>
+  </p>
+</div>
+
+<!-- ============ CLOSING ============ -->
+<p style="font-size:17px;line-height:1.8;color:#374151;margin:0 0 36px 0;text-align:center;max-width:760px;margin-left:auto;margin-right:auto;">
+  Streamline attendance by eliminating manual exports, third-party sync tools, and vendor lock-in. Whether you have <strong>5 devices or 50,000</strong> &mdash; across one office or one hundred countries &mdash; this module keeps Odoo HR Attendance accurate, real-time, and fully automated.
 </p>
 
-<div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:7px;padding:20px 26px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;">
+<!-- ============ CTA FOOTER ============ -->
+<div style="background:linear-gradient(135deg,#16266b 0%,#1d3a8a 100%);border-radius:14px;padding:30px 34px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;box-shadow:0 14px 30px rgba(22,38,107,.22);">
   <div>
-    <p style="margin:0 0 4px 0;font-size:16px;font-weight:700;color:#111827;">For Customization and Developer Support</p>
-    <p style="margin:0;font-size:14px;color:#6b7280;">Cams Biometrics &mdash; <a href="https://www.camsbiometrics.com" style="color:#1d4ed8;">www.camsbiometrics.com</a></p>
+    <p style="margin:0 0 5px 0;font-size:19px;font-weight:800;color:#ffffff;">Need customization or developer support?</p>
+    <p style="margin:0;font-size:14.5px;color:#bcd3f0;">Cams Biometrics &mdash; <a class="cams-link" href="https://www.camsbiometrics.com" style="color:#9fd3f5;text-decoration:none;font-weight:600;">www.camsbiometrics.com</a></p>
   </div>
-  <br>
-  <br>
-  <div style="display:flex;gap:20px;flex-wrap:wrap;align-items:center;">
-    <a href="mailto:support@camsbiometrics.com" style="font-size:14px;color:#1d4ed8;text-decoration:none;font-weight:600;">support@camsbiometrics.com</a>
-    <span style="color:#d1d5db;">|</span>
-    <a href="https://wa.me/919840941006" style="font-size:14px;color:#1d4ed8;text-decoration:none;font-weight:600;">WhatsApp +91-98409-41006</a>
+  <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
+    <a class="cams-btn" href="mailto:support@camsbiometrics.com" style="display:inline-flex;align-items:center;gap:9px;background:#ffffff;color:#16266b;font-size:14px;font-weight:700;text-decoration:none;border-radius:9px;padding:12px 20px;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#16266b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>support@camsbiometrics.com</a>
+    <a class="cams-btn" href="https://wa.me/919840941006" style="display:inline-flex;align-items:center;gap:9px;background:#25d366;color:#ffffff;font-size:14px;font-weight:700;text-decoration:none;border-radius:9px;padding:12px 20px;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg>WhatsApp +91-98409-41006</a>
   </div>
+</div>
+
 </div>
